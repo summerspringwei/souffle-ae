@@ -1,0 +1,4 @@
+/home/rammer/seq2seq/build/CMakeFiles/nnfusion_naive_rt.dir
+/home/rammer/seq2seq/build/CMakeFiles/main_test.dir
+/home/rammer/seq2seq/build/CMakeFiles/edit_cache.dir
+/home/rammer/seq2seq/build/CMakeFiles/rebuild_cache.dir

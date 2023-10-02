@@ -1,0 +1,47 @@
+{
+    "input": {
+        "attention_mask": {
+            "id": "((int64_t*)(inputs[1]))",
+            "name": "Parameter_312_0",
+            "shape": [
+                1,
+                384
+            ]
+        },
+        "input_ids": {
+            "id": "((int64_t*)(inputs[0]))",
+            "name": "Parameter_311_0",
+            "shape": [
+                1,
+                384
+            ]
+        },
+        "token_type_ids": {
+            "id": "((int64_t*)(inputs[2]))",
+            "name": "Parameter_313_0",
+            "shape": [
+                1,
+                384
+            ]
+        }
+    },
+    "output": {
+        "Add_2409_0": {
+            "id": "((float*)(outputs[0]))",
+            "name": "Result_2417_0",
+            "shape": [
+                1,
+                384,
+                768
+            ]
+        },
+        "Tanh_2416_0": {
+            "id": "((float*)(outputs[1]))",
+            "name": "Result_2418_0",
+            "shape": [
+                1,
+                768
+            ]
+        }
+    }
+}

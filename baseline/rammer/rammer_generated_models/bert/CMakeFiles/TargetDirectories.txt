@@ -1,0 +1,4 @@
+/root/mlsys_ae/rammer/bert/CMakeFiles/nnfusion_naive_rt.dir
+/root/mlsys_ae/rammer/bert/CMakeFiles/main_test.dir
+/root/mlsys_ae/rammer/bert/CMakeFiles/edit_cache.dir
+/root/mlsys_ae/rammer/bert/CMakeFiles/rebuild_cache.dir

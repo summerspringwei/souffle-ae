@@ -1,0 +1,4 @@
+/home/mlsys_ae/rammer/nasnet/build/CMakeFiles/nnfusion_naive_rt.dir
+/home/mlsys_ae/rammer/nasnet/build/CMakeFiles/main_test.dir
+/home/mlsys_ae/rammer/nasnet/build/CMakeFiles/edit_cache.dir
+/home/mlsys_ae/rammer/nasnet/build/CMakeFiles/rebuild_cache.dir

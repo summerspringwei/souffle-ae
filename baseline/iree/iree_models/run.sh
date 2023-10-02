@@ -1,0 +1,6 @@
+/workspace/iree-build/tools/iree-run-module --device=cuda --module=swin-transformer/swin-transformer.vmfb  --input="1x3x224x224xf32=0"
+/workspace/iree-build/tools/iree-run-module --device=cuda --module=lstm/frozen_lstm_l8s8h256_bs1.vmfb  --input="8x1x256xf32=0"
+/workspace/iree-build/tools/iree-run-module --device=cuda --module=efficientnet/efficientnet-b0.vmfb  --input="1x3x224x224xf32=0"
+/workspace/iree-build/tools/iree-run-module --device=cuda --module=resnext/resnext_imagenet_101.vmfb  --input="1x3x224x224xf32=0"
+/workspace/iree-build/tools/iree-run-module --device=cuda --module=mmoe/tf_MMoE_1_100_16_8_2.vmfb  --input="1x100xf32=0"
+/workspace/iree-build/tools/iree-run-module --device=cuda --module=bert/bert_1_384_768_3072.vmfb  --input="1x384x768xf16=0"

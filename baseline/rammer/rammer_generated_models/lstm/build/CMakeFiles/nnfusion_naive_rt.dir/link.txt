@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnnfusion_naive_rt.a CMakeFiles/nnfusion_naive_rt.dir/nnfusion_naive_rt_generated_nnfusion_rt.cu.o
+/usr/bin/ranlib libnnfusion_naive_rt.a

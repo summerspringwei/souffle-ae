@@ -1,0 +1,13 @@
+diff --git a/src/runtime/rpc/rpc_module.cc b/src/runtime/rpc/rpc_module.cc
+index 653646797..d93a94152 100644
+--- a/src/runtime/rpc/rpc_module.cc
++++ b/src/runtime/rpc/rpc_module.cc
+@@ -372,7 +372,7 @@ PackedFunc WrapTimeEvaluator(PackedFunc pf, Device dev, int number, int repeat,
+     TVMRetValue temp;
+     std::ostringstream os;
+     // skip first time call, to activate lazy compilation components.
+-    pf.CallPacked(args, &temp);
++    // pf.CallPacked(args, &temp);
+ 
+     DeviceAPI::Get(dev)->StreamSync(dev, nullptr);
+ 
