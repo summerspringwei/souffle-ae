@@ -16,7 +16,7 @@ else
 fi
 
 docker run -t --name $container_name \
-  -v `pwd`/rammer_generated_models:/root/rammer_generated_models \
+  -v $(pwd)/rammer_generated_models:/root/rammer_generated_models \
   -d nnfusion/cuda:10.2-cudnn7-devel-ubuntu18.04
 docker start $container_name
 docker exec -it $container_name /bin/bash

@@ -1,0 +1,12 @@
+"void FillKernel<float>(unsigned long, unsigned long, const T1 *, T1 *)",4928
+"void gemv2T_kernel_val<int, int, float, float, float, (int)128, (int)16, (int)4, (int)4, (bool)0, (bool)0, cublasGemvParams<cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T12, T5, T5)",6975
+"void FillKernel<float>(unsigned long, unsigned long, const T1 *, T1 *)",4160
+"void dot_kernel<float, (int)128, (int)0, cublasDotParams<cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>>>(T4)",4992
+"void reduce_1Block_kernel<float, (int)128, (int)7, cublasGemvTensorStridedBatched<float>, cublasGemvTensorStridedBatched<float>>(const T1 *, T1, T4, int, const T1 *, T1, T5, cublasPointerMode_t, cublasLtEpilogue_t, cublasGemvTensorStridedBatched<const biasType<T5::value_type, T1>::type>)",6016
+"void softmax_fw_small_kernel<float, float, (int)2, (int)1, (int)8, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",4096
+"void ElewiseArithKernel<float, AddFunc<float>>(int, const T1 *, const T1 *, T1 *)",3903
+"void CalReLUKernel<float>(int, T1 *, T1 *)",3776
+"void Tile<float>(unsigned long, unsigned long, unsigned long, const unsigned long *, const unsigned long *, const T1 *, T1 *)",7840
+"void ElewiseArithKernel<float, MulFunc<float>>(int, const T1 *, const T1 *, T1 *)",3712
+"void reduce_tensor_kernel_free<float, (int)8, (int)16, (int)1, (int)1, (cudnnReduceTensorOp_t)0, (cudnnNanPropagation_t)0>(cudnnReduceTensorStruct, unsigned int *, T1 *, cudnnTensorStruct, T1 *, T1, int, int, bool, cudnn::reduced_divisor)",5728
+"void op_tensor_kernel_alpha2_zero<(int)4, float, float, float, (int)1, (int)256, (int)1, (int)1, (cudnnOpTensorOp_t)0>(alpha2_zero_args<T2, T3, T4>)",4320

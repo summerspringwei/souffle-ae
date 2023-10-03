@@ -1,0 +1,440 @@
+Fused_Cast_fusion_11772637712938609317_kernel0,14624
+"void implicit_convolve_sgemm<float, float, (int)1024, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, int, int)",43168
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",15392
+Fused_ReLU_17995477703031877938_kernel0,8064
+"void cudnn::ops::pooling_fw_4d_kernel<float, float, cudnn::maxpooling_func<float, float, (cudnnNanPropagation_t)0>, (cudnnPoolingMode_t)0, (bool)0>(cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnPoolingStruct, T2, T2, int, cudnn::reduced_divisor, cudnn::reduced_divisor)",10176
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",10592
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",11712
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",8640
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",9696
+Fused_ReLU_17252545768499546798_kernel0,6304
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6912
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5728
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g16_tensor16x8x8_execute_kernel_cudnn,16416
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",6528
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",8768
+Fused_ReLU_17252545768499546798_kernel0,6304
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",15297
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",9568
+Fused_Add_ReLU_fusion_15698044654770442169_kernel0,8864
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",14688
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",8416
+Fused_ReLU_17252545768499546798_kernel0,6560
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6847
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5664
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g16_tensor16x8x8_execute_kernel_cudnn,15904
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",6720
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",8704
+Fused_ReLU_17252545768499546798_kernel0,6303
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",14656
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",9344
+Fused_Add_ReLU_fusion_15698044654770442169_kernel0,8736
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",14208
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",9024
+Fused_ReLU_17252545768499546798_kernel0,6240
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6624
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5824
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g16_tensor16x8x8_execute_kernel_cudnn,15648
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",6624
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",8736
+Fused_ReLU_17252545768499546798_kernel0,6208
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",14976
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",9344
+Fused_Add_ReLU_fusion_15698044654770442169_kernel0,8640
+"void implicit_convolve_sgemm<float, float, (int)128, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, int, int)",39136
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",20800
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7776
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",9280
+Fused_ReLU_13819427765763364251_kernel0,8064
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",7904
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6080
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g8_tensor16x8x8_execute_kernel_cudnn,15808
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",6049
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7776
+Fused_ReLU_3960865982668273337_kernel0,5216
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",15392
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7745
+Fused_Add_ReLU_fusion_965924682053263693_kernel0,6815
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16448
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7360
+Fused_ReLU_3960865982668273337_kernel0,5281
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6464
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6176
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g8_tensor16x8x8_execute_kernel_cudnn,15584
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7233
+Fused_ReLU_3960865982668273337_kernel0,4992
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",15360
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7552
+Fused_Add_ReLU_fusion_965924682053263693_kernel0,6560
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16096
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7232
+Fused_ReLU_3960865982668273337_kernel0,5024
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6368
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5888
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g8_tensor16x8x8_execute_kernel_cudnn,15200
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",6047
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7232
+Fused_ReLU_3960865982668273337_kernel0,4992
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",15264
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7744
+Fused_Add_ReLU_fusion_965924682053263693_kernel0,6721
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16288
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7232
+Fused_ReLU_3960865982668273337_kernel0,4991
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6336
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g8_tensor16x8x8_execute_kernel_cudnn,15136
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",6048
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7169
+Fused_ReLU_3960865982668273337_kernel0,4992
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)",15136
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7840
+Fused_Add_ReLU_fusion_965924682053263693_kernel0,7071
+"void cudnn::cnn::kern_precompute_indices<(bool)0>(int *, int, int, int, int, int)",5248
+"void precomputed_convolve_sgemm<float, (int)1024, (int)5, (int)5, (int)4, (int)3, (int)3, (int)1, (bool)0>(int, int, int, const T1 *, int, T1 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, bool, const T1 *, const T1 *, int *)",56672
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17984
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7617
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7809
+Fused_ReLU_3077331998074649614_kernel0,6401
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6688
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6624
+sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15936
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5695
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7264
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17056
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7680
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5504
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15649
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6209
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7296
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6016
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6624
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15872
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5696
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7168
+Fused_ReLU_3608328914566594529_kernel0,4863
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16992
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7552
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5280
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15136
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6080
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7168
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6656
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15296
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5696
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7105
+Fused_ReLU_3608328914566594529_kernel0,4896
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17120
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7552
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5281
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15104
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6272
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,4959
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5952
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6688
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15680
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5664
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7008
+Fused_ReLU_3608328914566594529_kernel0,4799
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17056
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7648
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5248
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15232
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6080
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7168
+Fused_ReLU_3608328914566594529_kernel0,4960
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5951
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6592
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15296
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5952
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7072
+Fused_ReLU_3608328914566594529_kernel0,4800
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17024
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7584
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5312
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15136
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6048
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7232
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6465
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15169
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5760
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7040
+Fused_ReLU_3608328914566594529_kernel0,4800
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17184
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7552
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5376
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15072
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6143
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5952
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6625
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15264
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5697
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7136
+Fused_ReLU_3608328914566594529_kernel0,4800
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17088
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7905
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5312
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15360
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6080
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7072
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6560
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15201
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5665
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7072
+Fused_ReLU_3608328914566594529_kernel0,4864
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16992
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7615
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5312
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15104
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6048
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7167
+Fused_ReLU_3608328914566594529_kernel0,4960
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6017
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6529
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15329
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5728
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,4832
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17024
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7616
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5376
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15073
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6432
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5952
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",7520
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15232
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5665
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7008
+Fused_ReLU_3608328914566594529_kernel0,4832
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16928
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7744
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5312
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15040
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6560
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7361
+Fused_ReLU_3608328914566594529_kernel0,4895
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6080
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6496
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15392
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5664
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7040
+Fused_ReLU_3608328914566594529_kernel0,4800
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17024
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7457
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5248
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15072
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6080
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7136
+Fused_ReLU_3608328914566594529_kernel0,4961
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6016
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6592
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15200
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5728
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7136
+Fused_ReLU_3608328914566594529_kernel0,4800
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17152
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7520
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5344
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15008
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6080
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7488
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6016
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6592
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15328
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5664
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7136
+Fused_ReLU_3608328914566594529_kernel0,4832
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16992
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7488
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5248
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15040
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",5984
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7104
+Fused_ReLU_3608328914566594529_kernel0,4960
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6529
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15264
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5664
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7168
+Fused_ReLU_3608328914566594529_kernel0,4832
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16991
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7520
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5344
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15040
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6144
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,4864
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6784
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15392
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5728
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,4800
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17185
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",8255
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5216
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15072
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6016
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7168
+Fused_ReLU_3608328914566594529_kernel0,4896
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6016
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6848
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15456
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5664
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7105
+Fused_ReLU_3608328914566594529_kernel0,4801
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17088
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7648
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5279
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15072
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6080
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7136
+Fused_ReLU_3608328914566594529_kernel0,4896
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6528
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15424
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5696
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7072
+Fused_ReLU_3608328914566594529_kernel0,4864
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16992
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7552
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5600
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",14976
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6048
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7168
+Fused_ReLU_3608328914566594529_kernel0,4960
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6049
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6593
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15232
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5728
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7040
+Fused_ReLU_3608328914566594529_kernel0,4832
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17153
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7584
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5280
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15104
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6112
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7201
+Fused_ReLU_3608328914566594529_kernel0,4896
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6048
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6625
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15201
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5663
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7072
+Fused_ReLU_3608328914566594529_kernel0,4864
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17056
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7488
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5280
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15393
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6176
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7296
+Fused_ReLU_3608328914566594529_kernel0,4896
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5952
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6560
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15265
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5760
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7136
+Fused_ReLU_3608328914566594529_kernel0,4864
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17600
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7585
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5664
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15072
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6144
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7136
+Fused_ReLU_3608328914566594529_kernel0,4960
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6016
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6560
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15328
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5696
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7104
+Fused_ReLU_3608328914566594529_kernel0,4800
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17536
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7520
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5600
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",15168
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6112
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,5024
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6624
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15200
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5664
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7040
+Fused_ReLU_3608328914566594529_kernel0,4801
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",17024
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7712
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5280
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align4>(T1::Params)",14976
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6112
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7200
+Fused_ReLU_3608328914566594529_kernel0,4928
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5984
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6432
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x4x1_g4_tensor16x8x8_execute_kernel_cudnn,15456
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5728
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7072
+Fused_ReLU_3608328914566594529_kernel0,4832
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",16993
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7552
+Fused_Add_ReLU_fusion_13232964691683898011_kernel0,5280
+"void cudnn::cnn::kern_precompute_indices<(bool)0>(int *, int, int, int, int, int)",5153
+"void precomputed_convolve_sgemm<float, (int)1024, (int)5, (int)5, (int)4, (int)3, (int)3, (int)1, (bool)0>(int, int, int, const T1 *, int, T1 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, bool, const T1 *, const T1 *, int *)",100320
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x64_32x6_nn_align4>(T1::Params)",25248
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7776
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7904
+Fused_ReLU_6572434502354472711_kernel0,5152
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",6336
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",9472
+sm80_xmma_fprop_implicit_gemm_indexed_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x2x1_g2_tensor16x8x8_execute_kernel_cudnn,18880
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5568
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7328
+Fused_ReLU_807021735341053040_kernel0,4736
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align1>(T1::Params)",22561
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6624
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7712
+Fused_Add_ReLU_fusion_12062285602959690340_kernel0,5024
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align1>(T1::Params)",21440
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6880
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",6624
+Fused_ReLU_807021735341053040_kernel0,4736
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5888
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",9792
+sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x2x1_g2_tensor16x8x8_execute_kernel_cudnn,18976
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5728
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7104
+Fused_ReLU_807021735341053040_kernel0,4609
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align1>(T1::Params)",22304
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6496
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7648
+Fused_Add_ReLU_fusion_12062285602959690340_kernel0,4992
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align1>(T1::Params)",20864
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6272
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",6976
+Fused_ReLU_807021735341053040_kernel0,4736
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",5920
+"void cudnn::ops::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)2>(cudnn::ops::nchw2nhwc_params_t<T3>, const T1 *, T2 *)",10112
+sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage4_warpsize1x2x1_g2_tensor16x8x8_execute_kernel_cudnn,18112
+"void cudnn::ops::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::ops::nhwc2nchw_params_t<T3>, const T1 *, T2 *)",5216
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7008
+Fused_ReLU_807021735341053040_kernel0,4864
+"void cutlass::Kernel<cutlass_80_tensorop_s1688gemm_64x128_32x3_nn_align1>(T1::Params)",21952
+"void splitKreduce_kernel<float, float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *, const T4 *)",6752
+"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)",7648
+Fused_Add_ReLU_ReduceMean_Cast_fusion_1841746111241132370_kernel0,6848
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,28513
+Fused_Cast_BiasAdd_fusion_15874302677284660258_kernel0,4608

@@ -1,0 +1,319 @@
+"void CastAll<float, __half>(T1 **, T2 **, unsigned long, const unsigned long *)",829029
+"void CastKernel<float, __half>(int, const T1 *, T2 *)",5536
+"void CastKernel<float, __half>(int, const T1 *, T2 *)",3872
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12672
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12384
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12352
+"void BroadcastArithKernel<__half, SubFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",7328
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7585
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7360
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7616
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",7393
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",18272
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16320
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16256
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10943
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84544
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83873
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10783
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,10208
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16736
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12448
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7584
+"void CastKernel<__half, float>(int, const T1 *, T2 *)",5632
+"void ElewiseArithKernel<float, AddFunc<float>>(int, const T1 *, const T1 *, T1 *)",6240
+"void CastKernel<float, __half>(int, const T1 *, T2 *)",5696
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22272
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11200
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10112
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24992
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7552
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5089
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10305
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12544
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12608
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12416
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7585
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7392
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7584
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16320
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16160
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16224
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10848
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84512
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83905
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10464
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,9824
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16704
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,13024
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7679
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5088
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10304
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22368
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11200
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10048
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24704
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7456
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5088
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10688
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12545
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12256
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12800
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7584
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7680
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7712
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16512
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16224
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16192
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10688
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84929
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83968
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10912
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,10112
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16577
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12448
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7552
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5152
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10303
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22720
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11328
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10144
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24832
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7455
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5696
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10464
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12736
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12416
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12320
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7616
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7584
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16480
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16352
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16512
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,11200
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84512
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83841
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10496
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,10016
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16544
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12576
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",8032
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5184
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10464
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22368
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11264
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",9984
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24960
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7616
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5152
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12576
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12512
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12224
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7552
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7585
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16448
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16224
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16256
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10817
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84289
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83776
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10496
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,9856
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16608
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12736
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5152
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22496
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11456
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10208
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24961
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7552
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5120
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12576
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12320
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7392
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12416
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7776
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16288
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16225
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16288
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10880
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84512
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83873
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10432
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,9984
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16640
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12512
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7616
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5216
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22272
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",12032
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10016
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24960
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7488
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5632
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10273
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12640
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12320
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7648
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12448
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7456
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7424
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16544
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16288
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16896
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10752
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84609
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83936
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10944
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,9952
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16416
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12673
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7648
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5376
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22272
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11168
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10048
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,25024
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7744
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5088
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10304
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12544
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12608
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7488
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12480
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7584
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16384
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16192
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16512
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10816
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84416
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83809
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10528
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,10048
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16640
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12736
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",8257
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5121
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22432
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11296
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10016
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24864
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7488
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5120
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10368
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12576
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12543
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12256
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7648
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7296
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16609
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16289
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16416
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10752
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84225
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83744
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10496
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,10112
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16385
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12480
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7744
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5152
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10560
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22432
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11328
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10208
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,25120
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7488
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5153
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10273
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12576
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12224
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12352
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7616
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7552
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16384
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16800
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16160
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10720
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84416
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83904
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10463
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,10080
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16703
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12416
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7616
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5088
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10624
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22464
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11360
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10112
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24895
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7456
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5088
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10304
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12448
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12545
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7487
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12480
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7648
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7552
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16320
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16351
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16224
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10848
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84481
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83936
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10432
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,9984
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16479
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12640
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7776
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5120
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10400
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22720
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11232
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10176
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,25024
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5120
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10400
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12608
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12480
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7489
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12480
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7616
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7552
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16384
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16321
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",17088
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,10880
+"void BroadcastArithKernel<__half, MulFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",84672
+"void BroadcastArithKernel<__half, AddFunc<__half>>(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, const T1 *, const T1 *, T1 *)",83905
+"void softmax_fw_small_kernel<__half, float, (int)1, (int)16, (int)32, (int)1>(T1 *, const T1 *, int, int, int, T2, T2)",10464
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x6_nn,10016
+"void Transpose<__half>(unsigned long, const T1 *, const unsigned long *, const unsigned long *, unsigned long, T1 *)",16480
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x5_tn,12735
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7520
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5152
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10624
+ampere_fp16_s16816gemm_fp16_128x128_ldg8_f2f_stages_32x5_tn,22241
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",11361
+"void GeluKernel<__half2>(unsigned long, T1 *, T1 *)",10080
+ampere_fp16_s16816gemm_fp16_64x64_sliced1x2_ldg8_f2f_stages_64x6_tn,24864
+"void op_generic_tensor_kernel<(int)2, __half, float, __half, (int)256, (cudnnGenericOp_t)0, (cudnnNanPropagation_t)0, (int)0>(cudnnTensorStruct, T4 *, cudnnTensorStruct, const T2 *, cudnnTensorStruct, const T2 *, T3, T3, T3, cudnnActivationStruct, reducedDivisorArray, int)",7488
+"void ElewiseArithKernel<__half2, AddFunc<__half2>>(int, const T1 *, const T1 *, T1 *)",5120
+"void LayerNormKernel<__half>(int, int, int, T1, const T1 *, const T1 *, const T1 *, T1 *, T1 *, T1 *)",10432

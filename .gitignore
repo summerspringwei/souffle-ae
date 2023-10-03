@@ -221,3 +221,4 @@ cython_debug/
 # library
 *.a
 
+*tmp.txt
