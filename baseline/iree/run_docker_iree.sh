@@ -12,5 +12,5 @@ elif [ "$1" = "run" ]; then
     -v `pwd`/iree_models:/workspace/iree_models \
     souffle-iree:latest /bin/bash
 elif [ "$1" = "attach" ]; then
-  docker exec -it $(docker ps -qf "ancestor=tvm-0.8:latest") /bin/bash
+  docker exec -it $(docker ps -qf "ancestor=souffle-iree:latest") /bin/bash
 fi

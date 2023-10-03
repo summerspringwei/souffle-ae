@@ -1,0 +1,7 @@
+forward_dispatch_0_vecmat_128x100_f32,10272
+forward_dispatch_1_vecmat_8x100_f32,6880
+forward_dispatch_2_generic_8_f32xi32xf32xi32,3808
+forward_dispatch_3_generic_8_f32,4096
+forward_dispatch_4_generic_8_f32,3744
+forward_dispatch_5_generic_8_f32,3808
+forward_dispatch_6_generic_16x8_f32,3840
