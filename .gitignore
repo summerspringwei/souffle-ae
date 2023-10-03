@@ -215,7 +215,9 @@ cython_debug/
 *.fatbin
 
 # CUDA profile
-
+*.nsys-rep
+*.sqlite
 
 # library
 *.a
+
