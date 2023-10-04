@@ -134,11 +134,13 @@ RUN mkdir /workspace/baseline
 
 # Set and modify environment variables here
 ENV PYTHONPATH=/workspace/tvm/python:/workspace/third_party/EfficientNet-PyTorch:${PYTHONPATH}
-ENV PYTHONPATH=/workspace/tensor-compiler/src/operator_fusion:${PYTHONPATH}
+ENV PYTHONPATH=/workspace/souffle-models/python/:${PYTHONPATH}
 ENV LD_LIBRARY_PATH=/workspace/tvm/build:${LD_LIBRARY_PATH}
 ENV TORCH_HOME="/workspace/anaconda3/lib/python3.9/site-packages/torch"
 ENV CUDA_HOME=/usr/local/cuda
 ENV LD_LIBRARY_PATH=${TORCH_HOME}/lib:${CUDA_HOME}/lib64:${CUDA_HOME}/targets/x86_64-linux/lib/stubs:${CUDA_HOME}/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
-ENV CUDA_HOME_11=/usr/local/cuda-11.1
-ENV LD_LIBRARY_PATH=${CUDA_HOME_11}/lib64:${CUDA_HOME_11}/targets/x86_64-linux/lib/stubs:${CUDA_HOME_11}/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
+RUN echo "Build docker!"
+# For mindspore
+# ENV CUDA_HOME_11=/usr/local/cuda-11.1
+# ENV LD_LIBRARY_PATH=${CUDA_HOME_11}/lib64:${CUDA_HOME_11}/targets/x86_64-linux/lib/stubs:${CUDA_HOME_11}/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
 # RUN python -c "import mindspore;mindspore.run_check()"

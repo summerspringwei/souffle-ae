@@ -1,4 +1,5 @@
 #!/bin/bash
+export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64:/usr/local/cuda-11.1/targets/x86_64-linux/lib/stubs:/usr/local/cuda-11.1/targets/x86_64-linux/lib:${LD_LIBRARY_PATH}
 set -xe
 select_latency='SELECT names.value AS name, end - start FROM CUPTI_ACTIVITY_KIND_KERNEL AS k JOIN StringIds AS names ON k.demangledName = names.id;'
 
