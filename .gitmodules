@@ -1,3 +1,12 @@
 [submodule "souffle-models"]
 	path = souffle-models
 	url = https://github.com/summerspringwei/souffle-models.git
+[submodule "third_party/Swin-Transformer"]
+	path = third_party/Swin-Transformer
+	url = https://github.com/microsoft/Swin-Transformer.git
+[submodule "third_party/EfficientNet-PyTorch"]
+	path = third_party/EfficientNet-PyTorch
+	url = https://github.com/lukemelas/EfficientNet-PyTorch.git
+[submodule "baseline/xla/xla_models/Swin-Transformer-Tensorflow"]
+	path = baseline/xla/xla_models/Swin-Transformer-Tensorflow
+	url = https://github.com/VcampSoldiers/Swin-Transformer-Tensorflow.git

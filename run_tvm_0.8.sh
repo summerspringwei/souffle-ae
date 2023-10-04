@@ -11,11 +11,8 @@ elif [ "$1" = "run" ]; then
   # Run docker image
   docker run --gpus all -it --privileged\
     -v $(pwd)/souffle-models:/workspace/souffle-models \
-    -v /home/xiachunwei/Projects/bert_rammer:/workspace/bert_rammer \
-    -v /home/xiachunwei/Projects/Swin-Transformer:/workspace/Swin-Transformer \
-    -v /home2/xiachunwei/Software/fusion/xla_models:/workspace/xla_models \
-    -v $(pwd)/baseline/mindspore:/workspace/baseline/mindspore \
-    tvm-0.8:latest /bin/bash
+    -v $(pwd)/baseline/:/workspace/baseline/ \
+      tvm-0.8:latest /bin/bash
 elif [ "$1" = "attach" ]; then
   docker exec -it $(docker ps -qf "ancestor=tvm-0.8:latest") /bin/bash
 fi
