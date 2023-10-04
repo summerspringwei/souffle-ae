@@ -1,0 +1,3 @@
+[submodule "souffle-models"]
+	path = souffle-models
+	url = https://github.com/summerspringwei/souffle-models.git
