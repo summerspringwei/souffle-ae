@@ -10,8 +10,7 @@ if [ "$1" = "build" ]; then
 elif [ "$1" = "run" ]; then
   # Run docker image
   docker run --gpus all -it --privileged\
-    -v /home/xiachunwei/Software/tensor-compiler:/workspace/tensor-compiler \
-    -v /home/xiachunwei/Projects/tensor-compiler-gpu/:/workspace/tensor-compiler-gpu \
+    -v $(pwd)/souffle-models:/workspace/souffle-models \
     -v /home/xiachunwei/Projects/bert_rammer:/workspace/bert_rammer \
     -v /home/xiachunwei/Projects/Swin-Transformer:/workspace/Swin-Transformer \
     -v /home2/xiachunwei/Software/fusion/xla_models:/workspace/xla_models \
