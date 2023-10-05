@@ -2,11 +2,16 @@
 This experiments requires the `tvm_0.8` docker and use the same env.
 
 ## Run
-First run `tvm_0.8` docker and then run
+First run `tvm_0.8` docker at root of `souffle-ae`:
 ```shell
-docker exec -it $(docker ps -qf "ancestor=tvm-0.8:latest") /bin/bash run_xla.sh
+bash run_tvm_0.8.sh run
 ```
 
-## XLA model files
+then run:
+```shell
+cd baseline/xla
+docker exec -it $(docker ps -qf "ancestor=souffle-tvm-0.8:latest") /bin/bash /workspace/baseline/xla/run_xla.sh
+```
 
-101 machine: `/home2/xiachunwei/Software/fusion/xla_models`
+## Note
+For `swin-transformer`, only part of the operators are supported by XLA, so we only optimize the MLP with XLA.

@@ -9,7 +9,7 @@ if [ "$1" = "build" ]; then
 elif [ "$1" = "run" ]; then
   # Run docker image
   docker run --gpus all -it --privileged\
-    -v `pwd`/iree_models:/workspace/iree_models \
+    -v $(pwd)/iree_models:/workspace/iree_models \
     souffle-iree:latest /bin/bash
 elif [ "$1" = "attach" ]; then
   docker exec -it $(docker ps -qf "ancestor=souffle-iree:latest") /bin/bash

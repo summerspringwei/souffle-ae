@@ -11,7 +11,7 @@ if [ "$1" = "build" ]; then
   docker build -t souffle-tvm-0.8:latest -f ./docker/tvm_0.8.Dockerfile ./docker
 elif [ "$1" = "run" ]; then
   # Run docker image
-  docker run --gpus all -it --privileged\
+  docker run --gpus all -td --privileged\
     -v $(pwd)/souffle-models:/workspace/souffle-models \
     -v $(pwd)/baseline/:/workspace/baseline/ \
       souffle-tvm-0.8:latest /bin/bash

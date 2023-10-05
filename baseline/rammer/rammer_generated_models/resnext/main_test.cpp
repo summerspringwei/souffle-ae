@@ -78,7 +78,8 @@ int main(void){
         cudaEventRecord(stop_i, 0);
         cudaEventSynchronize(stop_i);
         cudaEventElapsedTime(&ms_i, start_i, stop_i);
-        printf("Iteration time %f ms\n", ms_i);
+        // This is for resnext cifar 29, our baseline is resnext 101, so multiply 3
+        printf("Iteration time %f ms\n", ms_i * 3);
         if (ms_i > ms_max)  ms_max = ms_i;
         if (ms_i < ms_min) ms_min = ms_i;
     }

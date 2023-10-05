@@ -1,0 +1,5 @@
+"void Eigen::internal::EigenMetaKernel<Eigen::TensorEvaluator<const Eigen::TensorAssignOp<Eigen::TensorMap<Eigen::Tensor<float, (int)1, (int)1, int>, (int)16, Eigen::MakePointer>, const Eigen::TensorCwiseNullaryOp<Eigen::internal::scalar_const_op<float>, const Eigen::TensorMap<Eigen::Tensor<float, (int)1, (int)1, int>, (int)16, Eigen::MakePointer>>>, Eigen::GpuDevice>, int>(T1, T2)",3905
+fusion_9,3936
+fusion_5,4128
+fusion_8,3200
+fusion_4,3392

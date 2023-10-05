@@ -1,6 +1,3 @@
-
-import sys
-sys.path.extend(['', '/home/xiachunwei/Software/0.7-tvm/tvm/python', '/home/xiachunwei/Software/tensor-compiler/src/xla', '/home/xiachunwei/Software/anaconda3/lib/python37.zip', '/home/xiachunwei/Software/anaconda3/lib/python3.7', '/home/xiachunwei/Software/anaconda3/lib/python3.7/lib-dynload', '/home/xiachunwei/Software/pytf2.10/lib/python3.7/site-packages', '/home/xiachunwei/.local/lib/python3.7/site-packages', '/home/xiachunwei/Software/anaconda3/lib/python3.7/site-packages', '/home/xiachunwei/Projects/CenterNet/src/lib/models/networks/DCNv2', '/home/xiachunwei/Projects/tensor-compiler-gpu/src/transform_preds', '/home/xiachunwei/Projects/EfficientNet-PyTorch', '/home/xiachunwei/Software/anaconda3/lib/python3.7/site-packages/bert_binding-0.0.0-py3.7-linux-x86_64.egg', '/home/xiachunwei/Software/anaconda3/lib/python3.7/site-packages/lstm_binding-0.0.0-py3.7-linux-x86_64.egg'])
 import argparse
 import tensorflow as tf
 import numpy as np
@@ -105,7 +102,6 @@ def main():
     model_outputs = parser.parse_args().outputs
     args = parser.parse_args()
     load_and_run(model_file, args.inputs, model_outputs, dtype=args.dtype)
-
 
 
 if __name__ == '__main__':
