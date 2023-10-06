@@ -1,0 +1,20 @@
+diff --git a/docker/launch.sh b/docker/launch.sh
+index 13763d24..498a1573 100755
+--- a/docker/launch.sh
++++ b/docker/launch.sh
+@@ -47,7 +47,7 @@ if [ "$arg_jupyter" -ne "0" ]; then
+     extra_args+=" -p $arg_jupyter:$arg_jupyter"
+ fi
+ 
+-docker_args="$extra_args -v ${PWD}:/workspace/TensorRT --rm -it $arg_tag:latest"
++docker_args="$extra_args -v ${PWD}:/workspace/TensorRT -v $(dirname $(pwd))/tensorrt-8.4-engines:/workspace/tensorrt-8.4-engines --rm -td $arg_tag:latest"
+ 
+ if [ "$arg_jupyter" -ne "0" ]; then
+     docker_args+=" jupyter-lab --port=$arg_jupyter --no-browser --ip 0.0.0.0 --allow-root"
+diff --git a/third_party/protobuf b/third_party/protobuf
+index b10d490e..aea4a275 160000
+--- a/third_party/protobuf
++++ b/third_party/protobuf
+@@ -1 +1 @@
+-Subproject commit b10d490efd6052a02a90277e3325adbec6ce62eb
++Subproject commit aea4a275e28329f648e046469c095eef74254bb2

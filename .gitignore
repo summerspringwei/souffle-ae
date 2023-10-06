@@ -217,6 +217,7 @@ cython_debug/
 # CUDA profile
 *.nsys-rep
 *.sqlite
+*.ncu-rep
 
 # library
 *.a

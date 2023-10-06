@@ -58,3 +58,15 @@ libnnfusion_naive_rt.a filter=lfs diff=lfs merge=lfs -text
 ./baseline/rammer/rammer_generated_models/** filter=lfs diff=lfs merge=lfs -text
 ./baseline/iree/iree_models/** filter=lfs diff=lfs merge=lfs -text
 *.ncu-rep filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/bert_1_384_768_3072.onnx filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/bert_1_384_768_3072_trt_8.4.1_engine.trt filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/efficientnet-b0.onnx filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/efficientnet-b0_trt_8.4.1-engine.trt filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/lstm_bs1_h256s100.onnx filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/lstm_bs1_h256s100_trt_8.4.1_engine.trt filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/resnext_imagenet_101.onnx filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/resnext_imagenet_101_trt_8.4.1_engine.trt filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/swin-transformer.onnx filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/swin-transformer_trt_8.4.1_engine.trt filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/tf_MMoE_1_100_16_8_2.onnx filter=lfs diff=lfs merge=lfs -text
+baseline/tensorrt/tensorrt-8.4-engines/tf_MMoE_1_100_16_8_2_trt_8.4.1_engine.trt filter=lfs diff=lfs merge=lfs -text
