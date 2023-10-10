@@ -1,0 +1,77 @@
+diff --git a/official/cv/resnext/src/backbone/resnet.py b/official/cv/resnext/src/backbone/resnet.py
+index cbb6c544f..ff6ba7eef 100644
+--- a/official/cv/resnext/src/backbone/resnet.py
++++ b/official/cv/resnext/src/backbone/resnet.py
+@@ -15,6 +15,8 @@
+ """
+ ResNet based ResNext
+ """
++import mindspore
++import mindspore.numpy as np
+ import mindspore.nn as nn
+ from mindspore.ops.operations import Add, Split, Concat
+ from mindspore.ops import operations as P
+@@ -147,9 +149,12 @@ class Bottleneck(nn.Cell):
+         super(Bottleneck, self).__init__()
+ 
+         width = int(out_channels * (base_width / 64.0)) * groups
++        self.splited_width = int(out_channels * (base_width / 64.0))
+         self.groups = groups
+         self.conv1 = conv1x1(in_channels, width, stride=1)
++        self.new_conv1 = conv1x1(in_channels, self.splited_width, stride=1)
+         self.bn1 = nn.BatchNorm2d(width)
++        self.new_bn1 = nn.BatchNorm2d(self.splited_width)
+         self.relu = P.ReLU()
+ 
+         self.conv3x3s = nn.CellList()
+@@ -164,7 +169,14 @@ class Bottleneck(nn.Cell):
+ 
+         self.bn2 = nn.BatchNorm2d(width)
+         self.conv3 = conv1x1(width, out_channels * self.expansion, stride=1)
++        
++        self.new_conv3_arr = nn.CellList()
++        for _ in range(self.groups):
++            self.new_conv3_arr.append(conv1x1(self.splited_width, out_channels * self.expansion // self.groups, stride=1))
++        self.new_bn3 = nn.BatchNorm2d(out_channels * self.expansion // self.groups)
++        print(f"create_conv3: {self.splited_width} {out_channels * self.expansion}")
+         self.bn3 = nn.BatchNorm2d(out_channels * self.expansion)
++        self.split = Split(axis=1, output_num=self.groups)
+ 
+         self.use_se = use_se
+         if self.use_se:
+@@ -180,16 +192,33 @@ class Bottleneck(nn.Cell):
+ 
+     def construct(self, x):
+         identity = x
++        # All the conv share the same input
+         out = self.conv1(x)
+         out = self.bn1(out)
+         out = self.relu(out)
+ 
++        # Use group conv 
+         out = self.conv2(out)
+         out = self.bn2(out)
+         out = self.relu(out)
+-        out = self.conv3(out)
+-        out = self.bn3(out)
+ 
++        # Split the output and use parallel convs
++        splited_out = self.split(out)
++        # print("splited_out shape:")
++        # print(splited_out[0].shape)
++        conv3_out_arr = []
++        for i in range(self.groups):
++            tmp = self.new_conv3_arr[i](splited_out[i])
++            tmp = self.new_bn3(tmp)
++            conv3_out_arr.append(tmp)
++        out = np.concatenate(conv3_out_arr, axis=1)
++        # print("concated_out shape:")
++        # print(out.shape)
++
++        # out = self.conv3(out)
++        # out = self.bn3(out)
++        # print("original conv3 out")
++        # print(out.shape)
+         if self.use_se:
+             out = self.se(out)
+ 
