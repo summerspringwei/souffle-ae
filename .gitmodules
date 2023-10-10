@@ -7,9 +7,6 @@
 [submodule "third_party/EfficientNet-PyTorch"]
 	path = third_party/EfficientNet-PyTorch
 	url = https://github.com/lukemelas/EfficientNet-PyTorch.git
-[submodule "baseline/xla/xla_models/Swin-Transformer-Tensorflow"]
-	path = baseline/xla/xla_models/Swin-Transformer-Tensorflow
-	url = https://github.com/VcampSoldiers/Swin-Transformer-Tensorflow.git
 [submodule "baseline/tensorrt/TensorRT"]
 	path = baseline/tensorrt/TensorRT
 	url = https://github.com/NVIDIA/TensorRT.git
