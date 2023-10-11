@@ -10,3 +10,6 @@
 [submodule "baseline/tensorrt/TensorRT"]
 	path = baseline/tensorrt/TensorRT
 	url = https://github.com/NVIDIA/TensorRT.git
+[submodule "baseline/xla/xla_models/Swin-Transformer-Tensorflow"]
+	path = baseline/xla/xla_models/Swin-Transformer-Tensorflow
+	url = https://github.com/summerspringwei/Swin-Transformer-Tensorflow.git
