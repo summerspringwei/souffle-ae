@@ -51,4 +51,6 @@ sqlite3 --csv iree-tf_MMoE_1_100_16_8_2-nsys.sqlite "${select_latency}" > iree-t
 fi
 IREE_MMoE_LATENCY=$(python3 extract_nsys_cuda_kernel_latency.py iree-tf_MMoE_1_100_16_8_2-nsys.csv)
 
-echo "IREE: ", ${IREE_BERT_LATENCY}, ${IREE_RESNEXT_LATENCY}, ${IREE_LSTM_LATENCY}, ${IREE_EFFICIENTNET_LATENCY}, ${IREE_SWIN_TRANS_LATENCY}, ${IREE_MMoE_LATENCY}
+echo "IREE: ", ${IREE_BERT_LATENCY}, ${IREE_RESNEXT_LATENCY}, \
+  ${IREE_LSTM_LATENCY}, ${IREE_EFFICIENTNET_LATENCY}, \
+  ${IREE_SWIN_TRANS_LATENCY}, ${IREE_MMoE_LATENCY} | tee table3_iree.csv

@@ -10,4 +10,6 @@ if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
 fi
 a="12.1"
 b="34"
-echo ${a},${b}
+c=123
+echo ${a}, ${b},\
+    ${c} | tee tmp.csv
