@@ -3,9 +3,10 @@ set -xe
 
 cd TensorRT
 git submodule update --init --recursive
-git checkout 8.4.1
+git checkout -f 8.4.1
 # We need to checkout the corresponding version onnx parse
 cd parsers/onnx/ && git checkout release/8.4-GA && git submodule sync && git submodule update --init --recursive && cd ../../
+pwd
 # Apply our changes
 git apply ../souffle-tensorrt.patch
 # Build TensorRT

@@ -1,5 +1,18 @@
 {
   "files.associations": {
-    "stdexcept": "cpp"
-  }
+    "stdexcept": "cpp",
+    "istream": "cpp",
+    "xlocnum": "cpp",
+    "xlocmon": "cpp",
+    "memory": "cpp",
+    "__functional_base": "cpp",
+    "array": "cpp",
+    "locale": "cpp",
+    "tuple": "cpp",
+    "utility": "cpp",
+    "xlocmes": "cpp",
+    "*.tcc": "cpp",
+    "ranges": "cpp"
+  },
+  "cmake.sourceDirectory": "/home/xiachunwei/Projects/souffle-ae/baseline/rammer/rammer_generated_models/bert"
 }
