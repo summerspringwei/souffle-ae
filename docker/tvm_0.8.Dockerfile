@@ -139,6 +139,7 @@ ENV LD_LIBRARY_PATH=/workspace/tvm/build:${LD_LIBRARY_PATH}
 ENV TORCH_HOME="/workspace/anaconda3/lib/python3.9/site-packages/torch"
 ENV CUDA_HOME=/usr/local/cuda
 ENV LD_LIBRARY_PATH=${TORCH_HOME}/lib:${CUDA_HOME}/lib64:${CUDA_HOME}/targets/x86_64-linux/lib/stubs:${CUDA_HOME}/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
+ENV CUTLASS_HOME="/workspace/cutlass"
 RUN echo "Build docker!"
 # For mindspore
 # ENV CUDA_HOME_11=/usr/local/cuda-11.1

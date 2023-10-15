@@ -14,7 +14,7 @@ elif [ "$1" = "run" ]; then
   docker run --gpus all -td --privileged\
     -v $(pwd)/souffle-models:/workspace/souffle-models \
     -v $(pwd)/baseline/:/workspace/baseline/ \
-    -v /home/xiachunwei/Software/cutlass:/workspace/cutlass \
+    -v $(pwd)/third_party/cutlass:/workspace/cutlass \
       souffle-tvm-0.8:latest /bin/bash
 elif [ "$1" = "attach" ]; then
   docker exec -it $(docker ps -qf "ancestor=souffle-tvm-0.8:latest") /bin/bash
