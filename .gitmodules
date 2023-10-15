@@ -13,3 +13,6 @@
 [submodule "baseline/xla/xla_models/Swin-Transformer-Tensorflow"]
 	path = baseline/xla/xla_models/Swin-Transformer-Tensorflow
 	url = https://github.com/summerspringwei/Swin-Transformer-Tensorflow.git
+[submodule "third_party/cutlass"]
+	path = third_party/cutlass
+	url = https://github.com/NVIDIA/cutlass.git
