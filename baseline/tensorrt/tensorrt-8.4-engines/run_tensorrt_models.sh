@@ -35,4 +35,4 @@ TENSORRT_MMOE_LATENCY=$(
 # echo ${mmoe_latency}
 echo "TensorRT: ", ${TENSORRT_BERT_LATENCY}, ${TENSORRT_RESNEXT_LATENCY}, \
   ${TENSORRT_LSTM_LATENCY}, ${TENSORRT_EFFICIENTNET_LATENCY}, \
-  ${TENSORRT_SWIN_TRANS_LATENCY}, ${TENSORRT_MMOE_LATENCY} | tee table3_tensorrt.csv
+  ${TENSORRT_SWIN_TRANS_LATENCY}, ${TENSORRT_MMOE_LATENCY} | tee /workspace/tensorrt-8.4-engines/table3_tensorrt.csv

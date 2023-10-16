@@ -15,5 +15,5 @@ git apply ../souffle-tensorrt.patch
 ./docker/launch.sh --tag souffle-tensorrt8.4.1-ubuntu18.04 --gpus all
 # Build TensorRT
 trt_container_id=$(docker ps -qf "ancestor=souffle-tensorrt8.4.1-ubuntu18.04:latest")
-docker exec -it ${trt_container_id} \
+docker exec -td ${trt_container_id} \
   /bin/bash -c "cd /workspace/TensorRT && mkdir build && cd build && cmake .. && make -j$(nproc)"

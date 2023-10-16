@@ -5,7 +5,7 @@ cd /workspace/baseline/xla/xla_models
 # export XLA_FLAGS="--xla_hlo_profile --xla_dump_hlo_as_text --xla_dump_hlo_as_dot --xla_dump_hlo_as_html --xla_dump_hlo_as_proto"
 export TF_DUMP_GRAPH_PREFIX="/tmp/tf_dump_graph/"
 export TF_XLA_FLAGS="--tf_xla_enable_xla_devices --tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
-export XLA_FLAGS="--xla_hlo_profile  --xla_dump_hlo_as_text --xla_dump_hlo_as_dot --xla_dump_hlo_as_html --xla_dump_hlo_as_proto"
+# export XLA_FLAGS="--xla_hlo_profile  --xla_dump_hlo_as_text --xla_dump_hlo_as_dot --xla_dump_hlo_as_html --xla_dump_hlo_as_proto"
 # export TF_CPP_MIN_VLOG_LEVEL=2
 
 select_latency='SELECT names.value AS name, end - start FROM CUPTI_ACTIVITY_KIND_KERNEL AS k JOIN StringIds AS names ON k.demangledName = names.id;'
@@ -51,14 +51,14 @@ XLA_EFFICIENT_LATENCY=$(python3 extract_nsys_cuda_kernel_latency.py efficientnet
 
 cd Swin-Transformer-Tensorflow
 if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
-ncu --clock-control none -o swin-trans-ncu -f \
-    python main.py --cfg configs/swin_base_patch4_window7_224.yaml --include_top 1 --resume 1 --weights_type imagenet_1k > swin-trans.xla.log  2>&1
-ncu -i swin-trans-ncu.ncu-rep --csv --page raw | grep -v -e "redzone_checker" > swin-trans-ncu-raw.xla.csv
+# ncu --clock-control none -o swin-trans-ncu -f \
+#     python main.py --cfg configs/swin_base_patch4_window7_224.yaml --include_top 1 --resume 1 --weights_type imagenet_1k > swin-trans.xla.log  2>&1
+# ncu -i swin-trans-ncu.ncu-rep --csv --page raw | grep -v -e "redzone_checker" > swin-trans-ncu-raw.xla.csv
+nsys profile --stats=true -o swin-trans-nsys -f true \
+  python main.py --cfg configs/swin_base_patch4_window7_224.yaml --include_top 1 --resume 1 --weights_type imagenet_1k | grep -v -e "redzone_checker" > swin-trans.xla.log  2>&1
+sqlite3 --csv swin-trans-nsys.sqlite "${select_latency}" > swin-trans-nsys.xla.csv
 fi
-# nsys profile --stats=true -o swin-trans-nsys -f true \
-#   python main.py --cfg configs/swin_base_patch4_window7_224.yaml --include_top 1 --resume 1 --weights_type imagenet_1k | grep -v -e "redzone_checker" > swin-trans.xla.log  2>&1
-# sqlite3 --csv swin-trans-nsys.sqlite "${select_latency}" > swin-trans-nsys.xla.csv
-# python3 ../extract_nsys_cuda_kernel_latency.py swin-trans-nsys.xla.csv
+python3 ../extract_nsys_cuda_kernel_latency.py swin-trans-nsys.xla.csv
 XLA_SWIN_TRANS_LATENCY=$(python3 ../../../extract_ncu_cuda_kernel_latency.py swin-trans-ncu-raw.xla.csv)
 cd ..
 

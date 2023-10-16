@@ -15,6 +15,7 @@ elif [ "$1" = "run" ]; then
     -v $(pwd)/souffle-models:/workspace/souffle-models \
     -v $(pwd)/baseline/:/workspace/baseline/ \
     -v $(pwd)/third_party/cutlass:/workspace/cutlass \
+    -v $(pwd)/results:/workspace/results \
       souffle-tvm-0.8:latest /bin/bash
 elif [ "$1" = "attach" ]; then
   docker exec -it $(docker ps -qf "ancestor=souffle-tvm-0.8:latest") /bin/bash
