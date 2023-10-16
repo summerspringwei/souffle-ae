@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -xe
 script_directory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SOUFFLE_RUN=$1
 
@@ -14,6 +14,8 @@ if [ ! "$(docker ps -qf "ancestor=souffle-tvm-0.8:latest")" ]; then
 fi
 souffle_container_id=$(docker ps -qf "ancestor=souffle-tvm-0.8:latest")
 echo ${souffle_container_id}
+
+
 # XLA Pass
 docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "/workspace/baseline/xla/run_xla.sh"
 docker exec -it ${souffle_container_id} /bin/bash -c "cat /workspace/baseline/xla/xla_models/table3_xla.csv" >> ${script_directory}/../results/table3.csv

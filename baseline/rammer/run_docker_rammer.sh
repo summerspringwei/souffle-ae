@@ -1,11 +1,18 @@
 #!/bin/bash
 set -xe
+script_directory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# docker pull sunqianqi/sirius:mlsys_ae
-
-# Define the name of the Docker container you want to check
 container_name="souffle-rammer"
 
+# Check if the Docker image exists
+if docker image inspect "$container_name" &>/dev/null; then
+    echo "The Docker image $container_name exists."
+else
+    echo "The Docker image $container_name does not exist."
+    docker pull sunqianqi/sirius:mlsys_ae
+fi
+
+# Define the name of the Docker container you want to check
 # Check if the container is running
 if docker ps --filter "name=${container_name}" | grep -q .; then
     echo "Container ${container_name} is running. Stopping and removing it..."
@@ -17,7 +24,7 @@ fi
 
 # Run the docker in backgroud
 docker run -td --name ${container_name} \
-  -v $(pwd)/rammer_generated_models:/root/rammer_generated_models \
+  -v ${script_directory}/rammer_generated_models:/root/rammer_generated_models \
   --gpus all --privileged \
   sunqianqi/sirius:mlsys_ae /bin/bash
 
