@@ -54,9 +54,10 @@ The main restuls presented in this repository correspond to the submitted paper'
 
 #### Hardware：
 An linux server with 
-* an NVIDIA A100 Tensor Core GPU, 
-* at least 128GB memory and 
 * an Intel CPU with at least 8 physical cores.
+* an NVIDIA A100 Tensor Core GPU, 
+* at least 128GB memory,
+* at least 150GB disk capacity and
 * High-bandwidth network access is also required as we need to download about 50 GB software and docker images to build the experimental environments.
 
 #### Software:
@@ -65,6 +66,12 @@ An linux server with
 * CUDA 11.7 and compatible drivers
 
 ### 1.2 Build all env
+First clone this repo to your own Linux server:
+```shell
+https://github.com/summerspringwei/souffle-ae.git
+git submodule update --init --recursive
+```
+
 We provide a script to build all the env in just one commond:
 ```shell
 bash scripts/build_all_docker.sh
@@ -130,3 +137,10 @@ Check for the results:
 cat results/table3.csv
 ```
 Note that the results in `table3.csv` is a transposed matrix of table 3 in the submmited paper.
+
+### 2.2 CASE - Execution time with Souffle individual optimization (Table 4)
+
+### 2.3 CASE - The number of GPU kernel calls and global memory data transfer size of the resulting code (Table 5)
+
+## 2.4 CASE - EfficientNet sub-module latency breakdown (Figure 6)
+
