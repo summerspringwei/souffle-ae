@@ -39,10 +39,6 @@ The metric assesed in this notebook mainly include end-to-end latency, global me
 ## Important Notes
 **A few bash scripts take more than half an hour to complete; Please wait for the results before executing the next one.**
 
-# For models with python bindings, please first run `pip install .` in the corresponding directory.
-docker run -it --name=sirius_test --gpus all --privileged sunqianqi/sirius:mlsys_ae /bin/bash
-
-
 ### Links to The Paper
 
 **For each step, we highlight that the current evaluation is corresponding to which Section or Figure in the submitted paper.**
@@ -140,7 +136,25 @@ Note that the results in `table3.csv` is a transposed matrix of table 3 in the s
 
 ### 2.2 CASE - Execution time with Souffle individual optimization (Table 4)
 
+Run the experiments:
+```shell
+bash scripts/run_table4.sh
+```
+Check for the results:
+```shell
+cat results/table4.csv
+```
+
 ### 2.3 CASE - The number of GPU kernel calls and global memory data transfer size of the resulting code (Table 5)
 
 ## 2.4 CASE - EfficientNet sub-module latency breakdown (Figure 6)
 
+## Contact
+If there are any questions or suggestion, please feel free to drop me an email (scscx@leeds.ac.uk). Many thanks for your feedback!
+
+
+-----
+# The end of this Artifact Evaluation
+-----
+
+#### Many thanks for your review, time and efforts on this artifact evaluation.  <br> Many thanks for your understanding and bearing with some inconveniences on this notebook. 
