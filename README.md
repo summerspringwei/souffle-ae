@@ -38,7 +38,7 @@ The metric assesed in this notebook mainly include end-to-end latency, global me
 
 ## Important Notes
 **A few bash scripts take more than half an hour to complete; Please wait for the results before executing the next one.**
-
+**I will also provide a online jupyter notebook if you are inconvenient or having troubles  to build the environment. The jupyter notebook is run on our server and you can directly access the notebook and run the experiments from the internet**
 ### Links to The Paper
 
 **For each step, we highlight that the current evaluation is corresponding to which Section or Figure in the submitted paper.**
@@ -67,7 +67,7 @@ First clone this repo to your own Linux server:
 https://github.com/summerspringwei/souffle-ae.git
 git submodule update --init --recursive
 ```
-
+**Note, Please run `git pull --all to fetch the lastes content` before you start the evaluation. Thank you!**
 We provide a script to build all the env in just one commond:
 ```shell
 bash scripts/build_all_docker.sh
@@ -147,7 +147,17 @@ cat results/table4.csv
 
 ### 2.3 CASE - The number of GPU kernel calls and global memory data transfer size of the resulting code (Table 5)
 
+
+
+
 ## 2.4 CASE - EfficientNet sub-module latency breakdown (Figure 6)
+Run the experiments:
+```shell
+bash scripts/run_figure6.sh
+```
+Check for the results:
+The image will be saved in `results/efficientnet-se-module-latency-ours.pdf`.
+Please compare it with `Figure6`(on page 11) in the submitted paper.
 
 ## Contact
 If there are any questions or suggestion, please feel free to drop me an email (scscx@leeds.ac.uk). Many thanks for your feedback!
