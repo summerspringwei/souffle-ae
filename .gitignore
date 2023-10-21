@@ -226,3 +226,6 @@ cython_debug/
 *.dat
 *.csv
 efficientnet-se-module-latency-ours.pdf
+Fused_*.cu
+Fused_*.info
+Fused_*.json

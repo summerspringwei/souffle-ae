@@ -1,38 +1,77 @@
+#!/bin/bash 
+set -x
+# docker cp /home2/xiachunwei/Software/fusion/trt_8.4.1_models ${trt_container_id}:/workspace/
 # Run trtexec
-export LD_LIBRARY_PATH=/workspace/TensorRT/build:$LD_LIBRARY_PATH
 #BERT
-# ncu --clock-control none -o tensorrt-bert-ncu -f --set detailed \
-#   /workspace/TensorRT/build/trtexec --noDataTransfers --loadEngine=/workspace/tensorrt-8.4-engines/bert_1_384_768_3072_trt_8.4.1_engine.trt
-# ncu -i tensorrt-bert-ncu.ncu-rep --page raw --csv > tensorrt-bert-ncu.csv
-# python3 extract_ncu_cuda_kernel_latency.py tensorrt-bert-ncu.csv
-# bert_layer=12
-# TENSORRT_BERT_LATENCY=$(python3 -c "print(${bert_latency} * ${bert_layer})")
+export LD_LIBRARY_PATH=/workspace/TensorRT/build:$LD_LIBRARY_PATH
+TRT_EXEC=/workspace/TensorRT/build/trtexec
+MODEL_DIR=/workspace/tensorrt-8.4-engines/
+
+NCU_ARGS="--metrics dram__bytes_read,gpu__time_duration --clock-control none --target-processes all"
+TRT_ARGS="--noDataTransfers --warmUp=0 --iterations=1 --duration=0"
+
+if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
+ncu ${NCU_ARGS} -o ncu-tensorrt_bert -f \
+  ${TRT_EXEC} ${TRT_ARGS} --loadEngine=${MODEL_DIR}/bert_1_384_768_3072_trt_8.4.1_engine.trt 2>/dev/null
+fi
+ncu -i ./ncu-tensorrt_bert.ncu-rep --csv --page raw | grep -v "void genericReformat::copyPackedKernel"> ncu-tensorrt_bert.csv
+TENSORRT_BERT_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_bert.csv)
+TENSORRT_BERT_NUM_KERNELS=$(wc -l ncu-tensorrt_bert.csv | awk '{ print $1 }')
+bert_layers=12
+TENSORRT_BERT_MEM=$(python3 -c "print(${TENSORRT_BERT_MEM} * ${bert_layers})")
+TENSORRT_BERT_NUM_KERNELS=$(python3 -c "print(${TENSORRT_BERT_NUM_KERNELS} * ${bert_layers})")
+
 
 #ResNext
-ncu --clock-control none -o tensorrt-resnext-ncu -f --set detailed \
-    /workspace/TensorRT/build/trtexec --noDataTransfers --loadEngine=/workspace/tensorrt-8.4-engines/resnext_imagenet_101_trt_8.4.1_engine.trt
-ncu -i tensorrt-resnext-ncu.ncu-rep --page raw --csv > tensorrt-resnext-ncu.csv
+if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
+ncu ${NCU_ARGS} -o ncu-tensorrt_resnext -f \
+  ${TRT_EXEC} ${TRT_ARGS}  --loadEngine=${MODEL_DIR}/resnext_imagenet_101_trt_8.4.1_engine.trt 2>/dev/null 
+fi
+ncu -i ./ncu-tensorrt_resnext.ncu-rep --csv --page raw > ncu-tensorrt_resnext.csv
+TENSORRT_RESNEXT_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_resnext.csv)
+TENSORRT_RESNEXT_NUM_KERNELS=$(wc -l ncu-tensorrt_resnext.csv | awk '{ print $1 }')
 
 #LSTM
-ncu --clock-control none -o tensorrt-lstm-ncu -f --set detailed \
-  /workspace/TensorRT/build/trtexec --noDataTransfers --loadEngine=/workspace/tensorrt-8.4-engines/lstm_bs1_h256s100_trt_8.4.1_engine.trt
-ncu -i tensorrt-lstm-ncu.ncu-rep --page raw --csv > tensorrt-lstm-ncu.csv
+if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
+ncu ${NCU_ARGS} -o ncu-tensorrt_lstm -f \
+  ${TRT_EXEC} ${TRT_ARGS} --loadEngine=${MODEL_DIR}/lstm_bs1_h256s100_trt_8.4.1_engine.trt 2>/dev/null
+fi
+ncu -i ./ncu-tensorrt_lstm.ncu-rep --csv --page raw | grep -v "void genericReformat::copyPackedKernel" > ncu-tensorrt_lstm.csv
+TENSORRT_LSTM_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_lstm.csv)
+TENSORRT_LSTM_NUM_KERNELS=$(wc -l ncu-tensorrt_lstm.csv | awk '{ print $1 }')
+
 
 #EfficientNet
-ncu --clock-control none -o tensorrt-efficientnet-ncu -f --set detailed \
-  /workspace/TensorRT/build/trtexec --noDataTransfers --loadEngine=/workspace/tensorrt-8.4-engines/efficientnet-b0_trt_8.4.1-engine.trt
-ncu -i tensorrt-efficientnet-ncu.ncu-rep --page raw --csv > tensorrt-efficientnet-ncu.csv
+if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
+ncu ${NCU_ARGS} -o ncu-tensorrt_efficient -f \
+  ${TRT_EXEC} ${TRT_ARGS} --loadEngine=${MODEL_DIR}/efficientnet-b0_trt_8.4.1-engine.trt 2>/dev/null
+fi
+ncu -i ./ncu-tensorrt_efficient.ncu-rep --csv --page raw | grep -v "void genericReformat::copyPackedKernel" > ncu-tensorrt_efficient.csv
+TENSORRT_EFFICIENTNET_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_efficient.csv)
+TENSORRT_EFFICIENTNET_NUM_KERNELS=$(wc -l ncu-tensorrt_efficient.csv | awk '{ print $1 }')
 
 #SwinTrans.
-ncu --clock-control none -o tensorrt-swin_tran-ncu -f --set detailed \
-  /workspace/TensorRT/build/trtexec --noDataTransfers --loadEngine=/workspace/tensorrt-8.4-engines/swin-transformer_trt_8.4.1_engine.trt
-ncu -i tensorrt-swin_tran-ncu.ncu-rep --page raw --csv > tensorrt-swin_tran-ncu.csv
+if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
+ncu ${NCU_ARGS} -o ncu-tensorrt_swin_trans -f \
+  ${TRT_EXEC} ${TRT_ARGS} --loadEngine=${MODEL_DIR}/swin-transformer_trt_8.4.1_engine.trt 2>/dev/null
+fi
+ncu -i ./ncu-tensorrt_swin_trans.ncu-rep --csv --page raw | grep -v "void genericReformat::copyPackedKernel" > ncu-tensorrt_swin_trans.csv
+TENSORRT_SWIN_TRANS_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_swin_trans.csv)
+TENSORRT_SWIN_TRANS_NUM_KERNELS=$(wc -l ncu-tensorrt_swin_trans.csv | awk '{ print $1 }')
+
 
 #MMOE
-ncu --clock-control none -o tensorrt-mmoe-ncu -f --set detailed \
-  /workspace/TensorRT/build/trtexec --noDataTransfers --loadEngine=/workspace/tensorrt-8.4-engines/tf_MMoE_1_100_16_8_2_trt_8.4.1_engine.trt
-ncu -i tensorrt-mmoe-ncu.ncu-rep --page raw --csv > tensorrt-mmoe-ncu.csv
+if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
+ncu ${NCU_ARGS} -o ncu-tensorrt_mmoe -f \
+  ${TRT_EXEC} ${TRT_ARGS} --loadEngine=${MODEL_DIR}/tf_MMoE_1_100_16_8_2_trt_8.4.1_engine.trt 2>/dev/null
+fi
+ncu -i ./ncu-tensorrt_mmoe.ncu-rep --csv --page raw | grep -v "void genericReformat::copyPackedKernel" > ncu-tensorrt_mmoe.csv
+TENSORRT_MMOE_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_mmoe.csv)
+TENSORRT_MMOE_NUM_KERNELS=$(wc -l ncu-tensorrt_mmoe.csv | awk '{ print $1 }')
 
-echo "TensorRT: ", ${TENSORRT_BERT_LATENCY}, ${TENSORRT_RESNEXT_LATENCY}, \
-  ${TENSORRT_LSTM_LATENCY}, ${TENSORRT_EFFICIENTNET_LATENCY}, \
-  ${TENSORRT_SWIN_TRANS_LATENCY}, ${TENSORRT_MMOE_LATENCY} | tee table3_tensorrt.csv
+echo "TensorRT: ", ${TENSORRT_BERT_NUM_KERNELS}, ${TENSORRT_RESNEXT_NUM_KERNELS}, \
+  ${TENSORRT_LSTM_NUM_KERNELS}, ${TENSORRT_EFFICIENTNET_NUM_KERNELS}, \
+  ${TENSORRT_SWIN_TRANS_NUM_KERNELS}, ${TENSORRT_MMOE_NUM_KERNELS} > table5_tensorrt.csv
+echo "TensorRT: ", ${TENSORRT_BERT_MEM}, ${TENSORRT_RESNEXT_MEM}, \
+  ${TENSORRT_LSTM_MEM}, ${TENSORRT_EFFICIENTNET_MEM}, \
+  ${TENSORRT_SWIN_TRANS_MEM}, ${TENSORRT_MMOE_MEM} >> table5_tensorrt.csv
