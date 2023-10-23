@@ -26,16 +26,16 @@ tensorrt_container_id=$(docker ps -qf "ancestor=souffle-tensorrt8.4.1-ubuntu18.0
 echo "TensorRT docker running": 
 
 # Run ncu to get the kernel number and memory read
-docker exec -it ${tensorrt_container_id} /bin/bash -c "cd /workspace/tensorrt-8.4-engines && ./run_ncu_tensorrt.sh"
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${tensorrt_container_id} /bin/bash -c "cd /workspace/tensorrt-8.4-engines && ./run_ncu_tensorrt.sh"
 # Cat result to table5.csv
-docker exec -it ${tensorrt_container_id} /bin/bash -c "cat /workspace/tensorrt-8.4-engines/table5_tensorrt.csv" >> ${table5_path}
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${tensorrt_container_id} /bin/bash -c "cat /workspace/tensorrt-8.4-engines/table5_tensorrt.csv" >> ${table5_path}
 
 # Run Apollo
-docker exec -it ${souffle_container_id} /bin/bash -c "cd /workspace/baseline/mindspore && ./run_ncu_apollo.sh"
-docker exec -it ${souffle_container_id} /bin/bash -c "cat /workspace/baseline/mindspore/table5_apollo.csv" >> ${table5_path}
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cd /workspace/baseline/mindspore && ./run_ncu_apollo.sh"
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cat /workspace/baseline/mindspore/table5_apollo.csv" >> ${table5_path}
 
 # TODO Run XLA
 
 # Run souffle
-docker exec -it ${souffle_container_id} /bin/bash -c "cd /workspace/souffle-models/python/models && ./run_ncu_mem_souffle.sh"
-docker exec -it ${souffle_container_id} /bin/bash -c "cat table5_souffle.csv" >> ${table5_path}
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cd /workspace/souffle-models/python/models && ./run_ncu_mem_souffle.sh"
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cat table5_souffle.csv" >> ${table5_path}
