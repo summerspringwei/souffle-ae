@@ -80,6 +80,7 @@ Run the following commond the start the dockers:
 ```shell
 bash run_tvm_0.8.sh run
 cd baseline/iree && bash run_docker_iree.sh
+cd baseline/tensorrt && bash run_docker_tensorrt.sh
 ```
 
 ### 1.4 Check the status of docker containers
@@ -135,6 +136,8 @@ cat results/table3.csv
 Note that the results in `table3.csv` is a transposed matrix of table 3 in the submmited paper.
 
 ### 2.2 CASE - Execution time with Souffle individual optimization (Table 4)
+In this case, we present an ablation study by enable the individual optimization one-by-one
+to demonstrate the effectiveness of each optmization techniques.
 
 Run the experiments:
 ```shell
@@ -146,9 +149,18 @@ cat results/table4.csv
 ```
 
 ### 2.3 CASE - The number of GPU kernel calls and global memory data transfer size of the resulting code (Table 5)
+In this case, We compare Souffle with STOA works about the number of GPU kernel calls and global memory data transfer size (M bytes).
+Less number of GPU kernel calls and global memory data transfer size leads to better
+fusion results.
 
-
-
+Run the experiments:
+```shell
+bash scripts/run_table5.sh
+```
+Check for the results:
+```shell
+cat results/table5.csv
+```
 
 ## 2.4 CASE - EfficientNet sub-module latency breakdown (Figure 6)
 Run the experiments:

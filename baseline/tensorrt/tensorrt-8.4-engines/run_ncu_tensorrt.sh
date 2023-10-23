@@ -69,9 +69,9 @@ ncu -i ./ncu-tensorrt_mmoe.ncu-rep --csv --page raw | grep -v "void genericRefor
 TENSORRT_MMOE_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_mmoe.csv)
 TENSORRT_MMOE_NUM_KERNELS=$(wc -l ncu-tensorrt_mmoe.csv | awk '{ print $1 }')
 
-echo "TensorRT: ", ${TENSORRT_BERT_NUM_KERNELS}, ${TENSORRT_RESNEXT_NUM_KERNELS}, \
+echo "TensorRT number of kernels:", ${TENSORRT_BERT_NUM_KERNELS}, ${TENSORRT_RESNEXT_NUM_KERNELS}, \
   ${TENSORRT_LSTM_NUM_KERNELS}, ${TENSORRT_EFFICIENTNET_NUM_KERNELS}, \
   ${TENSORRT_SWIN_TRANS_NUM_KERNELS}, ${TENSORRT_MMOE_NUM_KERNELS} > table5_tensorrt.csv
-echo "TensorRT: ", ${TENSORRT_BERT_MEM}, ${TENSORRT_RESNEXT_MEM}, \
+echo "TensorRT: memory read (MBytes):", ${TENSORRT_BERT_MEM}, ${TENSORRT_RESNEXT_MEM}, \
   ${TENSORRT_LSTM_MEM}, ${TENSORRT_EFFICIENTNET_MEM}, \
   ${TENSORRT_SWIN_TRANS_MEM}, ${TENSORRT_MMOE_MEM} >> table5_tensorrt.csv
