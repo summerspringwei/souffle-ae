@@ -18,3 +18,5 @@ echo ${souffle_container_id}
 # Run the efficientnet_se_module_unittest
 docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "/workspace/souffle-models/cpp/efficientnet/run_efficient_se_module_unittest.sh"
 docker cp ${souffle_container_id}:/workspace/souffle-models/cpp/efficientnet/scripts/efficientnet-se-module-latency-ours.pdf ${script_directory}/../results/
+docker cp ${souffle_container_id}:/workspace/souffle-models/cpp/efficientnet/scripts/efficientnet-se-module-latency-ours.eps ${script_directory}/../results/
+docker cp ${souffle_container_id}:/workspace/souffle-models/cpp/efficientnet/scripts/efficientnet-se-module-latency-ours.png ${script_directory}/../results/

@@ -38,4 +38,4 @@ docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash 
 
 # Run souffle
 docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cd /workspace/souffle-models/python/models && ./run_ncu_mem_souffle.sh"
-docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cat table5_souffle.csv" >> ${table5_path}
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cd /workspace/souffle-models/python/models && cat table5_souffle.csv" >> ${table5_path}
