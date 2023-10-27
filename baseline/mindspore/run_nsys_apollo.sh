@@ -53,4 +53,4 @@ APOLLO_MMoE_LATENCY=$(python3 ${MINDSPORE_FOLDER}/extract_nsys_cuda_kernel_laten
 
 # echo "Apollo: " ${APOLLO_BERT_LATENCY}, ${APOLLO_RESNEXT_LATENCY}, ${APOLLO_LSTM_LATENCY}, ${APOLLO_EFFICIENTNET_LATENCY}, ${APOLLO_SWIN_TRANS_LATENCY}, ${APOLLO_MMoE_LATENCY} | tee table3_apollo.csv
 
-python3 -c "print('Apollo:, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}'.format(${APOLLO_BERT_LATENCY}, ${APOLLO_RESNEXT_LATENCY}, ${APOLLO_LSTM_LATENCY}, ${APOLLO_EFFICIENTNET_LATENCY}, ${APOLLO_SWIN_TRANS_LATENCY}, ${APOLLO_MMoE_LATENCY}))" | tee table3_apollo.csv
+python3 -c "print('Apollo:, {:.3f}, {:.3f}, failed, {:.3f}, {:.3f}, {:.3f}'.format(${APOLLO_BERT_LATENCY}, ${APOLLO_RESNEXT_LATENCY}, ${APOLLO_EFFICIENTNET_LATENCY}, ${APOLLO_SWIN_TRANS_LATENCY}, ${APOLLO_MMoE_LATENCY}))" | tee table3_apollo.csv
