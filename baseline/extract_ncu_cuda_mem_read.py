@@ -56,7 +56,6 @@ def filter_invalid_ncu_records(values: List):
 
 def get_ncu_sum_of_memory_read(file_path):
     output, units = read_ncu_csv(file_path, ["Kernel Name", "dram__bytes_read.sum"])
-    print(units)
     output = filter_invalid_ncu_records(output)
     # Only dump kernelname and latency to a csv file
     simple_csv_file_name = os.path.splitext(file_path)[0]+"-dram_bytes_read.csv"

@@ -48,7 +48,6 @@ fi
 XLA_EFFICIENT_LATENCY=$(python3 extract_nsys_cuda_kernel_latency.py efficientnet-b0-nsys.xla.csv)
 
 # SwinTrans.
-
 cd Swin-Transformer-Tensorflow
 if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
 # ncu --clock-control none -o swin-trans-ncu -f \
@@ -70,6 +69,8 @@ sqlite3 --csv tf_mmoe-nsys.sqlite "${select_latency}" | grep -v -e "redzone_chec
 fi
 XLA_MMoE_LATENCY=$(python3 extract_nsys_cuda_kernel_latency.py tf_mmoe-nsys.xla.csv)
 
-echo "XLA: ," ${XLA_BERT_LATENCY}, ${XLA_RESNEXT_LATENCY}, \
-  ${XLA_LSTM_LATENCY}, ${XLA_EFFICIENT_LATENCY}, \
-  ${XLA_SWIN_TRANS_LATENCY}, ${XLA_MMoE_LATENCY} | tee table3_xla.csv
+# echo "XLA: ," ${XLA_BERT_LATENCY}, ${XLA_RESNEXT_LATENCY}, \
+#   ${XLA_LSTM_LATENCY}, ${XLA_EFFICIENT_LATENCY}, \
+#   ${XLA_SWIN_TRANS_LATENCY}, ${XLA_MMoE_LATENCY} | tee table3_xla.csv
+
+python3 -c "print('XLA:, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}'.format(${XLA_BERT_LATENCY}, ${XLA_RESNEXT_LATENCY}, ${XLA_LSTM_LATENCY}, ${XLA_EFFICIENT_LATENCY}, ${XLA_SWIN_TRANS_LATENCY}, ${XLA_MMoE_LATENCY}))"  | tee table3_xla.csv

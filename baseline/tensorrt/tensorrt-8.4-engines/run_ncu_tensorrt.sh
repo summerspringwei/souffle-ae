@@ -27,7 +27,7 @@ if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
 ncu ${NCU_ARGS} -o ncu-tensorrt_resnext -f \
   ${TRT_EXEC} ${TRT_ARGS}  --loadEngine=${MODEL_DIR}/resnext_imagenet_101_trt_8.4.1_engine.trt 2>/dev/null 
 fi
-ncu -i ./ncu-tensorrt_resnext.ncu-rep --csv --page raw > ncu-tensorrt_resnext.csv
+ncu -i ./ncu-tensorrt_resnext.ncu-rep --csv --page raw | grep -v "void genericReformat::copyVectorizedKernel*" | grep -v "void genericReformat::copyPackedKernel" > ncu-tensorrt_resnext.csv
 TENSORRT_RESNEXT_MEM=$(python3 ${MODEL_DIR}/extract_ncu_cuda_mem_read.py ncu-tensorrt_resnext.csv)
 TENSORRT_RESNEXT_NUM_KERNELS=$(wc -l ncu-tensorrt_resnext.csv | awk '{ print $1 }')
 

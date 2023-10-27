@@ -47,8 +47,8 @@ docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} \
   /bin/bash -c "cat ${souffle_model_path}/swin_transformer/table4_swin_transformer.csv" >> ${script_directory}/../results/table4.csv
 
 # MMoE
-docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} \ 
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} \
   /bin/bash -c "cd ${souffle_model_path}/mmoe && ./run_ncu_mmoe.sh"
-docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} \ 
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} \
   /bin/bash -c "cat ${souffle_model_path}/mmoe/table4_mmoe.csv" >> ${script_directory}/../results/table4.csv
 

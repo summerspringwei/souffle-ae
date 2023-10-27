@@ -33,6 +33,9 @@ TENSORRT_MMOE_LATENCY=$(
   /workspace/TensorRT/build/trtexec --noDataTransfers --loadEngine=/workspace/tensorrt-8.4-engines/tf_MMoE_1_100_16_8_2_trt_8.4.1_engine.trt 2>/dev/null \
   | grep "\[I\] Latency: min" | grep -o "mean = [0-9.]* ms" | sed 's/mean = //;s/ ms//')
 # echo ${mmoe_latency}
-echo "TensorRT: ", ${TENSORRT_BERT_LATENCY}, ${TENSORRT_RESNEXT_LATENCY}, \
-  ${TENSORRT_LSTM_LATENCY}, ${TENSORRT_EFFICIENTNET_LATENCY}, \
-  ${TENSORRT_SWIN_TRANS_LATENCY}, ${TENSORRT_MMOE_LATENCY} | tee /workspace/tensorrt-8.4-engines/table3_tensorrt.csv
+# echo "TensorRT: ", ${TENSORRT_BERT_LATENCY}, ${TENSORRT_RESNEXT_LATENCY}, \
+#   ${TENSORRT_LSTM_LATENCY}, ${TENSORRT_EFFICIENTNET_LATENCY}, \
+#   ${TENSORRT_SWIN_TRANS_LATENCY}, ${TENSORRT_MMOE_LATENCY} | tee /workspace/tensorrt-8.4-engines/table3_tensorrt.csv
+
+python3 -c "print('TensorRT:, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}'.format(${TENSORRT_BERT_LATENCY}, ${TENSORRT_RESNEXT_LATENCY}, ${TENSORRT_LSTM_LATENCY}, ${TENSORRT_EFFICIENTNET_LATENCY}, ${TENSORRT_SWIN_TRANS_LATENCY}, ${TENSORRT_MMOE_LATENCY}))" | tee /workspace/tensorrt-8.4-engines/table3_tensorrt.csv
+

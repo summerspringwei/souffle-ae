@@ -34,7 +34,9 @@ docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${tensorrt_container_id} /bin/bash
 docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cd /workspace/baseline/mindspore && ./run_ncu_apollo.sh"
 docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cat /workspace/baseline/mindspore/table5_apollo.csv" >> ${table5_path}
 
-# TODO Run XLA
+# Run XLA
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cd /workspace/baseline/xla && ./run_ncu_xla.sh"
+docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cat /workspace/baseline/xla/xla_models/table5_xla.csv" >> ${table5_path}
 
 # Run souffle
 docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${souffle_container_id} /bin/bash -c "cd /workspace/souffle-models/python/models && ./run_ncu_mem_souffle.sh"

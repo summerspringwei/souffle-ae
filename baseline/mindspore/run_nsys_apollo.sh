@@ -51,4 +51,6 @@ nsys profile --stats=true -o apollo-tf_MMoE_1_100_16_8_2-nsys -f true \
 fi
 APOLLO_MMoE_LATENCY=$(python3 ${MINDSPORE_FOLDER}/extract_nsys_cuda_kernel_latency.py apollo-tf_MMoE_1_100_16_8_2-nsys.csv)
 
-echo "Apollo: " ${APOLLO_BERT_LATENCY}, ${APOLLO_RESNEXT_LATENCY}, ${APOLLO_LSTM_LATENCY}, ${APOLLO_EFFICIENTNET_LATENCY}, ${APOLLO_SWIN_TRANS_LATENCY}, ${APOLLO_MMoE_LATENCY} | tee table3_apollo.csv
+# echo "Apollo: " ${APOLLO_BERT_LATENCY}, ${APOLLO_RESNEXT_LATENCY}, ${APOLLO_LSTM_LATENCY}, ${APOLLO_EFFICIENTNET_LATENCY}, ${APOLLO_SWIN_TRANS_LATENCY}, ${APOLLO_MMoE_LATENCY} | tee table3_apollo.csv
+
+python3 -c "print('Apollo:, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}'.format(${APOLLO_BERT_LATENCY}, ${APOLLO_RESNEXT_LATENCY}, ${APOLLO_LSTM_LATENCY}, ${APOLLO_EFFICIENTNET_LATENCY}, ${APOLLO_SWIN_TRANS_LATENCY}, ${APOLLO_MMoE_LATENCY}))" | tee table3_apollo.csv

@@ -14,5 +14,7 @@ RAMMER_LSTM_LATENCY=$(cat lstm.rammer.log | grep "Summary" | awk -F'[][]' '{prin
 
 cd /root/rammer_generated_models/
 
-echo "Rammer:," ${RAMMER_BERT_LATENCY}, ${RAMMER_RESNEXT_LATENCY},\
- ${RAMMER_LSTM_LATENCY}, "failed", "failed", "failed" > table3_rammer.csv
+# echo "Rammer:," ${RAMMER_BERT_LATENCY}, ${RAMMER_RESNEXT_LATENCY},\
+#  ${RAMMER_LSTM_LATENCY}, "failed", "failed", "failed" > table3_rammer.csv
+
+python3 -c "print('Rammer:, {:.3f}, {:.3f}, {:.3f}, failed, failed, failed'.format(${RAMMER_BERT_LATENCY}, ${RAMMER_RESNEXT_LATENCY}, ${RAMMER_LSTM_LATENCY}))" > table3_rammer.csv
