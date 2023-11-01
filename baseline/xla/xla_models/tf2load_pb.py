@@ -58,7 +58,9 @@ def load_and_run(model_file, inputs, outputs, dtype="float32"):
     with tf.io.gfile.GFile(model_file, "rb") as f:
         graph_def = tf.compat.v1.GraphDef()
         loaded = graph_def.ParseFromString(f.read())
-
+        nodes = [n.name for n in graph_def.node]
+        print(f"number of operators: {len(nodes)}")
+    
     input_name_shape_list = get_name_and_shape(inputs)
     input_str_list = [name+":0" for (name, shape) in input_name_shape_list]
 

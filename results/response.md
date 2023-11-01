@@ -50,3 +50,47 @@ paper as these are two independent optimizations.
 The speed up for `fused` may be higher or lower than that of `global-sync`.
 Secondly, to shorten the running time we only run the kernel once to profile the latency,
 so the number may be slightly different from the number in the submitted paper.
+
+
+Dear reviewers:
+
+**Thank you for your efforts. Please see the following comments:**
+
+## Response for comments A12
+
+**response for Table3**
+1. Time for ResNeXt on XLA is 10x bigger
+> We forget the filter out the memory copy/boundary checker (`redzone_checker`) / layout convert kernels produced by XLA. These kernels are auxiliary kernels and are not for operator computation.
+We have fixed the bug and provided a stanalone cell the check the results for XLA on ResNext and EfficientNet.
+See `http://8.141.164.33/notebooks/asplos24ae.ipynb#Standalone-cell-for-unexpected-result`
+
+**response for Table5**
+1. TRT on LSTM memory transfer and # of kernel calls is bigger;
+> After examining our original setup, we find that we set the wrong configuration for the LSTM in the submitted paper:
+The number of layers should be 10 (AE version) rather than 8 (submitted paper version).
+And the number produced in the AE is correct. We will fix the numbers in the final version.
+As you have mentioned the conclusion still stands. 
+The results are beneficial for our work as Souffle produces fewer kernels compared with the baseline compilers.
+
+2. XLA number of kernels on ResNeXt is 20x bigger,
+>  We have fixed the bug and provided a stanalone cell the check the results for XLA on ResNext.
+
+3. XLA on Efficient is 10x bigger
+> The same as ResNeXt.
+We have fixed the bug and provided a standalone cell the check the results for EfficientNet.
+
+4. The author's method on Swin-Trans is 4x bigger.
+> We will check our code to fix the bug and provide a standalone Jupyter cell to reproduce the result.
+
+PS. The results for XLA are not stable even thought we use the same version of TensorFlow and same code.
+The XLA always runs unexpected kernels (like `redzone_checker`).
+Even though we filter out some kernels the number of kernels still much larger than that of ours.
+
+**response for Figure6**
+1.  fused method in M3,M4 and AVG has lower speed up*
+> The speedup variance for for M3, M4 and AVG is small (around $10\%$).
+The average fused method speed-up and global-sync speed-up for AE are 1.48 and 1.55, respectively.
+The speed up in the submitted paper is 1.49 and 1.40.
+So the speed up is a little higher than that of the submitted paper.
+
+Thank you so much for your patience and All the best!

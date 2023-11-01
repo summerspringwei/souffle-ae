@@ -19,7 +19,7 @@ ncu ${NCU_ARGS} -o ncu-${NAME} -f \
   --inputs lyj-input:1,384,768 --outputs layer_0/output/LayerNorm/batchnorm/add_1 --dtype float16 > bert.xla.log 2>&1
 sqlite3 --csv xla-bert-nsys.sqlite "${select_latency}" > xla-bert-nsys.xla.csv
 fi
-ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw > ncu-${NAME}.csv
+ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw | grep -v "redzone_checker" | grep -v "void convolve_common_engine_float_NHWC" > ncu-${NAME}.csv
 XLA_BERT_MEM=$(python3 ../../extract_ncu_cuda_mem_read.py ncu-${NAME}.csv)
 XLA_BERT_NUM_KERNELS=$(wc -l ncu-${NAME}.csv | awk '{ print $1 }')
 bert_layer=12
@@ -33,7 +33,12 @@ ncu ${NCU_ARGS} -o ncu-${NAME} -f \
   python tf2load_pb.py --model_file resnext_imagenet_101.pb \
   --inputs input:1,3,224,224 --outputs Flatten/flatten/Reshape --dtype float32 > resnext_imagenet_101.xla.log  2>&1
 fi
-ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw | grep -v "*redzone_checker*" > ncu-${NAME}.csv
+ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw \
+  | grep -v "redzone_checker" \
+  | grep -v "void convolve_common_engine_float_NHWC"\
+  | grep -v "void cudnn::ops::nchwToNhwcKernel" \
+  | grep -v "__xla_fp32_comparison"\
+  | grep -v "void cudnn::ops::nhwcToNchwKernel" > ncu-${NAME}.csv
 XLA_RESNEXT_MEM=$(python3 ../../extract_ncu_cuda_mem_read.py ncu-${NAME}.csv)
 XLA_RESNEXT_NUM_KERNELS=$(wc -l ncu-${NAME}.csv | awk '{ print $1 }')
 
@@ -43,7 +48,7 @@ if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
 ncu ${NCU_ARGS} -o ncu-${NAME} -f \
   python tf_lstm.py > tf_lstm.xla.log  2>&1
 fi
-ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw > ncu-${NAME}.csv
+ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw | grep -v "redzone_checker" | grep -v "void convolve_common_engine_float_NHWC" > ncu-${NAME}.csv
 XLA_LSTM_MEM=$(python3 ../../extract_ncu_cuda_mem_read.py ncu-${NAME}.csv)
 XLA_LSTM_NUM_KERNELS=$(wc -l ncu-${NAME}.csv | awk '{ print $1 }')
 
@@ -54,7 +59,12 @@ ncu ${NCU_ARGS} -o ncu-${NAME} -f \
   python tf2load_pb.py --model_file efficientnet-b0.pb \
   --inputs input_tensor:1,224,224,3 --outputs efficientnet-b0/model/head/dense/BiasAdd --dtype float32 > efficientnet-b0.xla.log  2>&1
 fi
-ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw > ncu-${NAME}.csv
+ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw \
+  | grep -v "redzone_checker" \
+  | grep -v "void convolve_common_engine_float_NHWC"\
+  | grep -v "__xla_fp32_comparison"\
+  | grep -v "void cudnn::ops::nhwcToNchwKernel" \
+  | grep -v "void cudnn::ops::nchwToNhwcKernel" > ncu-${NAME}.csv
 XLA_EFFICIENTNET_MEM=$(python3 ../../extract_ncu_cuda_mem_read.py ncu-${NAME}.csv)
 XLA_EFFICIENTNET_NUM_KERNELS=$(wc -l ncu-${NAME}.csv | awk '{ print $1 }')
 
@@ -76,7 +86,7 @@ if [ -n "${SOUFFLE_RUN}" ] && [ "${SOUFFLE_RUN}" = "TRUE" ]; then
 ncu ${NCU_ARGS} -o ncu-${NAME} -f \
   python3 tf_mmoe.py > tf_mmoe.xla.log  2>&1
 fi
-ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw > ncu-${NAME}.csv
+ncu -i ./ncu-${NAME}.ncu-rep --csv --page raw | grep -v "redzone_checker" | grep -v "void convolve_common_engine_float_NHWC" > ncu-${NAME}.csv
 XLA_MMOE_MEM=$(python3 ../../extract_ncu_cuda_mem_read.py ncu-${NAME}.csv)
 XLA_MMOE_NUM_KERNELS=$(wc -l ncu-${NAME}.csv | awk '{ print $1 }')
 
@@ -84,6 +94,6 @@ XLA_MMOE_NUM_KERNELS=$(wc -l ncu-${NAME}.csv | awk '{ print $1 }')
 echo "XLA number of kernels:", ${XLA_BERT_NUM_KERNELS}, ${XLA_RESNEXT_NUM_KERNELS}, \
   ${XLA_LSTM_NUM_KERNELS}, ${XLA_EFFICIENTNET_NUM_KERNELS}, \
   ${XLA_SWIN_TRANS_NUM_KERNELS}, ${XLA_MMOE_NUM_KERNELS} > table5_xla.csv
-echo "XLA: ", ${XLA_BERT_MEM}, ${XLA_RESNEXT_MEM}, \
-  ${XLA_LSTM_MEM}, ${XLA_EFFICIENTNET_MEM}, \
-  ${XLA_SWIN_TRANS_MEM}, ${XLA_MMOE_MEM} >> table5_xla_mem.csv
+# echo "XLA: ", ${XLA_BERT_MEM}, ${XLA_RESNEXT_MEM}, \
+#   ${XLA_LSTM_MEM}, ${XLA_EFFICIENTNET_MEM}, \
+#   ${XLA_SWIN_TRANS_MEM}, ${XLA_MMOE_MEM} >> table5_xla_mem.csv

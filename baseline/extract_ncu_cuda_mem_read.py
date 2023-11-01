@@ -67,7 +67,8 @@ def get_ncu_sum_of_memory_read(file_path):
         f.writelines(lines)
     # Always assume latency is the last column
     output_np = np.sum(np.array(output)[:, -1].astype(np.float32).reshape((-1,)))
-    print(output_np)
+    # print(output_np)
+    print("{:.3f}".format(float(output_np)))
 
 
 def main():
