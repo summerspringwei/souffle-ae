@@ -10,7 +10,7 @@ touch ${script_directory}/../results/table3.csv
 
 # First launch the docker container
 if [ ! "$(docker ps -qf "ancestor=souffle-tvm-0.8:latest")" ]; then
-  bash ../run_tvm_0.8.sh run
+  bash ${script_directory}/../run_tvm_0.8.sh run
 fi
 souffle_container_id=$(docker ps -qf "ancestor=souffle-tvm-0.8:latest")
 echo ${souffle_container_id}
@@ -30,12 +30,9 @@ docker exec -it -e SOUFFLE_RUN=${SOUFFLE_RUN} ${trt_container_id} /bin/bash /wor
 docker exec -it ${trt_container_id} \
   /bin/bash -c "cat /workspace/tensorrt-8.4-engines/table3_tensorrt.csv" >> ${script_directory}/../results/table3.csv
 
-# Require docker
+
 # Rammer Pass
-if [ ! "$(docker ps -qf "ancestor=sunqianqi/sirius:mlsys_ae")" ]; then
-bash ${script_directory}/../baseline/rammer/run_docker_rammer.sh start
-fi
-bash ${script_directory}/../baseline/rammer/run_docker_rammer.sh run
+bash ${script_directory}/../baseline/rammer/run_docker_rammer.sh
 cat ${script_directory}/../baseline/rammer/rammer_generated_models/table3_rammer.csv >> ${script_directory}/../results/table3.csv
 
 
