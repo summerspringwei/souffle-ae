@@ -129,6 +129,7 @@ RUN ln -s /usr/local/cuda-11.7 /usr/local/cuda
 RUN git clone https://gitee.com/mindspore/models.git /workspace/mindspore_models && \
     cd /workspace/mindspore_models && git checkout daae6cd7d72ba0912209924bd5d7b8345d31c4ee
 COPY souffle-mindspore_models-patch.txt /workspace/mindspore_models/
+RUN ls /workspace/mindspore_models/
 RUN cd /workspace/mindspore_models/ && git apply souffle-mindspore_models-patch.txt
 RUN mkdir /workspace/baseline
 

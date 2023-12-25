@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xe
+set -x
 script_directory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SOUFFLE_RUN=$1
 
@@ -32,7 +32,10 @@ docker exec -it ${trt_container_id} \
 
 # Require docker
 # Rammer Pass
-bash ${script_directory}/../baseline/rammer/run_docker_rammer.sh
+if [ ! "$(docker ps -qf "ancestor=sunqianqi/sirius:mlsys_ae")" ]; then
+bash ${script_directory}/../baseline/rammer/run_docker_rammer.sh start
+fi
+bash ${script_directory}/../baseline/rammer/run_docker_rammer.sh run
 cat ${script_directory}/../baseline/rammer/rammer_generated_models/table3_rammer.csv >> ${script_directory}/../results/table3.csv
 
 
